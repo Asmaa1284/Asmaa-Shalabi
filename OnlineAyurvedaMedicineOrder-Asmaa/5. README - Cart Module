@@ -1,0 +1,39 @@
+------------------------------------Post----------------------------------------------
+1. Add Cart : Method "Post"
+2. URL: http://localhost:9092/cart/add
+3. INPUT: 
+   Body -> Raw -> JSON
+  
+    {
+    "userName": "Somi",
+    "pass": "somi06",
+    "email": "somi6gmail.com",
+    "lastName": "samar6",
+    "firstName": "sam6",
+    "iD": 2
+}
+-------------------------------------PATCH---------------------------------------------------------------------
+1-Add medicine by name to the cart Id and the quantity: Method "Patch"
+URL:  http://localhost:9092/cart/2/brofin/2
+
+2- Add medicine by ID to the Cart
+   URL:  http://localhost:9092/cart/2/2
+   
+  
+------------------------------------GET----------------------------------------------
+1. Get Category By Id : Method "GET"
+2. URL: http://localhost:9092/cart/getcart/2
+
+1. Get All Category : Method "GET"
+2. URL: 	http://localhost:9092/cart/getAll
+
+Get Medicines from the cart:
+URL:http://localhost:9092/cart/getMed/2
+-----------------------------------------------DELETE-------------------------------------------------------------
+
+1. Delete All Medicines from the cart : Method "DELETE"
+ URL:	http://localhost:9092/cart/delete/2
+ 
+2. Delete Medicine from cart by I.D : Delete Method
+URL : http://localhost:9092/cart/delete/2/2
+	

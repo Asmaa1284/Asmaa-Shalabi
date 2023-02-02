@@ -1,0 +1,38 @@
+------------------------------------Post----------------------------------------------
+1. Add Employee : Method "Post"
+2. URL: http://localhost:9092/loginController/add
+3. INPUT: 
+   Body -> Raw -> JSON
+  
+	 {
+    "iD": 8,
+    "userName" : "rameshs",
+     "pass" : "ramesh08"
+     }
+------------------------------------GET----------------------------------------------
+1. Get Employee By Id  : Method "GET"
+2. URL: http://localhost:9092/loginController/getEmployee/7
+
+1. Get All Employees : Method "GET"
+2. URL: http://localhost:9092/loginController/getEmployees
+
+------------------------------------UPDATE----------------------------------------------
+
+1. Update Customer : Method "PUT"
+2. URL: http://localhost:9092/loginController/updateCustomer/8
+3. INPUT: 
+   Body -> Raw -> JSON
+    {
+    "iD": 8,
+    "userName" : "rameshs",
+     "pass" : "ramesh08",
+    "email" : "ramesh8gmail.com",
+    "firstName":"ram8",
+    "lastName": "Kumar6"
+   
+  }
+	
+------------------------------------DELETE----------------------------------------------
+1. Delete Medicine : Method "DELETE"
+2. URL:	http://localhost:9092/loginController/delete/8
+	

@@ -1,0 +1,90 @@
+------------------------------------Post----------------------------------------------
+1. Add order : Method "Post"
+2. URL: http://localhost:9092/order/add/2/1
+3. 
+    
+-------------------------------------Update--------------------------------------------------------------------
+1-update order by order id  : Method "put"
+URL:  http://localhost:9092/order/1
+[
+    {
+        "id": 1,
+        "orderDate": "2023-01-23",
+        "cost": 3.5,
+        "dispatchDate": null,
+        "totalCost": 7.0,
+        "status": "Deliverd",
+        "cust": {
+            "userName": "Somi",
+            "pass": "somi06",
+            "email": "somi6gmail.com",
+            "lastName": "samar6",
+            "firstName": "sam6",
+            "iD": 2
+        },
+        "cart": {
+            "id": 2,
+            "cost": 7.0,
+            "quantity": 2,
+            "cust": {
+                "userName": "Somi",
+                "pass": "somi06",
+                "email": "somi6gmail.com",
+                "lastName": "samar6",
+                "firstName": "sam6",
+                "iD": 2
+            },
+            "medList": [
+                {
+                    "id": 1,
+                    "name": "brofin ",
+                    "company": "Tylanol ",
+                    "typeOfMed": "ramesh8gmail.com",
+                    "ingridients": "cetamol",
+                    "price": 3.5,
+                    "cate": {
+                        "id": 1,
+                        "name": "Tylanol "
+                    }
+                }
+            ]
+        },
+        "med": {
+            "id": 1,
+            "name": "brofin ",
+            "company": "Tylanol ",
+            "typeOfMed": "ramesh8gmail.com",
+            "ingridients": "cetamol",
+            "price": 3.5,
+            "cate": {
+                "id": 1,
+                "name": "Tylanol "
+            }
+        }
+    }
+]
+
+2- update order by ID and status 
+   URL:  http://localhost:9092/order/1/shipping
+   
+  
+------------------------------------GET----------------------------------------------
+1. Get Order By Id : Method "GET"
+2. URL: http://localhost:9092/order/vieworder/2
+
+1. Get All orders : Method "GET"
+2. URL: 	http://localhost:9092/order/viewall
+
+Get customer orders by customer id:
+URL:http://localhost:9092/order/showCustomerOrder/2
+
+
+-----------------------------------------------DELETE-------------------------------------------------------------
+cancel order by id:
+url : http://localhost:9092/order/cancel/2
+1. Delete All Medicines from the cart : Method "DELETE"
+ URL:	http://localhost:9092/cart/delete/2
+ 
+2. Delete Medicine from cart by I.D : Delete Method
+URL : http://localhost:9092/cart/delete/2/2
+	

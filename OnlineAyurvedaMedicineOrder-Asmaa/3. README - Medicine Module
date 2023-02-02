@@ -1,0 +1,54 @@
+------------------------------------PosT----------------------------------------------
+1. Add Medicine : Method "POST"
+2. URL: http://localhost:9092/medicine/add
+3. INPUT: 
+   Body -> Raw -> JSON
+   {
+    
+    "name" : "brofin ",
+     "company" : "Tylanol ",
+    "typeOfMed" : "ramesh8gmail.com",
+    "ingridients": "cetamol",
+    "price":3.5,
+    "cate": {
+            "id": 1,
+            "name": "Tylanol "
+        }
+    
+    
+   
+  }
+	
+------------------------------------GET----------------------------------------------
+1. Get Medicine By Id : Method "GET"
+2. URL: http://localhost:9092/Medicine/get/1
+
+1. Get All Medicine : Method "GET"
+2. URL: http://localhost:9092/medicine/getAll	
+
+------------------------------------UPDATE----------------------------------------------
+
+1. Update Medicine : Method "Put"
+2. URL: http://localhost:9092/medicine/updatemed/1
+3. INPUT: 
+   Body -> Raw -> JSON
+  
+	 {
+    
+    "name" : "brofin ",
+     "company" : "Tylanol ",
+    "typeOfMed" : "ramesh8gmail.com",
+    "ingridients": "cetamol",
+    "price":4.5,
+    "cate": {
+            "id": 1,
+            "name": "Tylanol "
+        }
+    
+    
+   
+  }
+------------------------------------DELETE----------------------------------------------
+1. Delete Medicine : Method "DELETE"
+2. URL:	http://localhost:9092/medicine/delete/54
+	

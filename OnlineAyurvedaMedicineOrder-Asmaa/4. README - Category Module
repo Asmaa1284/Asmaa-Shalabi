@@ -1,0 +1,41 @@
+------------------------------------PosT----------------------------------------------
+1. Add Category : Method "POST"
+2. URL: http://localhost:9092/category/add
+3. INPUT: 
+   Body -> Raw -> JSON
+   {
+     {
+    
+    "name" : "PainReliever "
+     
+    
+    
+   
+  }
+	}
+	
+------------------------------------GET----------------------------------------------
+1. Get Category By Id : Method "GET"
+2. URL: http://localhost:9092/category/get/1
+
+1. Get All Category : Method "GET"
+2. URL: 	http://localhost:9092/category/getAll
+
+------------------------------------UPDATE----------------------------------------------
+
+1. Update category : Method "Put"
+2. URL: http://localhost:9092/category/updatecat/1
+3. INPUT: 
+   Body -> Raw -> JSON
+   {
+    "id":1,
+    "name" : "cough ",
+    
+    
+   
+  }
+	
+------------------------------------DELETE----------------------------------------------
+1. Delete Medicine : Method "DELETE"
+2. URL:	http://localhost:9092/category/delete/54
+	
